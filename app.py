@@ -18,7 +18,6 @@ predictor = dlib.shape_predictor("shape_predictor_68_face_landmarks.dat")
 
 
 class VideoProcessor:
-    
     def drawPoints(image, faceLandmarks, startpoint, endpoint, isClosed=False):
         points = []
     for i in range(startpoint, endpoint+1):
